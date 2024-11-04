@@ -39,8 +39,8 @@ EDA involved the exploring of data to answer some questions about the data such 
 
 #### Data Analysis
 Here is included some basic lines of code or queries or some DAX expressions used during my analysis
-
-- Calculating the Average Sales per Product and Total Revenue By Region
+##### Using Excel
+- Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
 ```EXCEL
 Total revenue for the North	=SUMIF(D2:D9922,D2,H2:H9922)
 Total revenue for the South	=SUMIF(D2:D9922,D9906,H2:H9922)
@@ -54,7 +54,78 @@ Average sales for socks		=AVERAGEIF(C2:C9922,C9905,I2:I9922)
 Average sales for jacket	=AVERAGEIF(C2:C9922,C9917,I2:I9922)
 Average sales for gloves	=AVERAGEIF(C2:C9922,C9918,I2:I9922)
 ```
-- 
+
+###### Data Visualization
+- Calculations
+
+![Excel Sales Data ](https://github.com/user-attachments/assets/4bfd3aa2-28eb-4a70-9946-9de09e90b47f)
+- Pivot Tables
+
+![Excel Sales Data Pivot Table Sheet](https://github.com/user-attachments/assets/db7e5671-a5f9-4d66-8438-c0c29cca745b)
+- Bar Charts
+
+![Excel Sales Data Bar Chart Sheet](https://github.com/user-attachments/assets/16f0618a-66b2-45c8-a17c-50057c86368c)
+
+  
+
+##### Using SQL Server
+Analysis:
+- Sales Data data set was imported to the SQL Server Managemnt Server Studio
+- The following analysis was done on the data with the corresponding queries
+1. Retrieve the total sales for each product category.
+```SQL
+select PRODUCT, SUM(revenue) as Totalsales from [dbo].[Assignment2]
+group by PRODUCT
+```
+  2. Find the number of sales transactions in each region.
+```SQL
+select Region, COUNT(*) as NumberOfSalesTransactions from [dbo].[Assignment2]
+group by Region
+```
+  3. Find the highest-selling product by total sales value.
+```SQL
+select top 1 PRODUCT, SUM(sales) as HighestSellingProduct 
+from [dbo].[Assignment2]
+group by Product
+```
+  4. Calculate total revenue per product.
+```SQL
+select PRODUCT, SUM(revenue) as TotalRevenuePerProduct
+from [dbo].[Assignment2]
+group by PRODUCT
+```
+  5. Calculate monthly sales totals for the current year.
+```SQL
+select
+      FORMAT(ORDERDATE, 'yyyy-MM') AS Sales_month,
+	  SUM(Sales) as Monthhlysalestotal
+from [dbo].[Assignment2]
+where YEAR(orderdate) = 2024
+group by FORMAT(orderdate, 'yyyy-MM')
+ORDER BY FORMAT(ORDERDATE, 'yyyy-MM')
+```
+  6. Find the top 5 customers by total purchase amount.
+```SQL
+select top 5 customer_id, SUM(revenue) as Top5CustomersByPurchaseAmount 
+from [dbo].[Assignment2]
+group by customer_id
+```
+
+  7. Calculate the percentage of total sales contributed by each region.
+```SQL
+select
+        Region, 
+		SUM(sales) as Totalsalesinregion,
+       (SUM(sales)*100.0) / (select SUM (Sales) from [dbo].[Assignment2]) as Sales_Percentage
+from [dbo].[Assignment2]
+group by Region
+```
+  8. Identify products with no sales in the last quarter.
+```SQL
+select PRODUCT as Productwithnosalesinlastquarter from [dbo].[Assignment2]
+group by Product
+having SUM(case When orderdate >= '2024-01-01' and orderdate < '2024-04-30' then 1 else 0 end) = 0
+```
 
 
 
