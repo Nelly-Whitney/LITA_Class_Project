@@ -12,3 +12,16 @@ This Data Analysis project aims to analyze the sales performance of a retail sto
 - Sales Forecasting: Develop predictive models to forecast futeure sales, helping the store to optimize inventory management
 
 #### Data Sources
+The Primary source of the data is from the Data Analysis Teachers at Incubator Hub
+
+#### Tools Used
+- Microsoft Excel
+  1. Data Cleaning
+  2. Data Analysis
+  3. Data Visualization
+- SQL (Structured Query Language) Server [Download Here](https://www.microsoft.com) for querying of data
+- Power Bi Desktop for Visualization[Download Here](https://www.google.com/url?client=internal-element-cse&cx=012684331380167808104:oe5oj--md1a&q=https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads&sa=U&ved=2ahUKEwjQubqQr8GJAxUvUaQEHV7fEFkQFnoECBUQAQ&usg=AOvVaw1759XFBNl5AM71b9k88zga)
+- GitHub for Portfolio Building
+
+
+
