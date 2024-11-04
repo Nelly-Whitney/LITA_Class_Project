@@ -1,7 +1,24 @@
 # LITA_Class_Project
 Documentation of my class projects while learning Data Analysis with Incubator Hub
-## PROJECTS
-### Project 1 
+## PROJECTS: LITA_Capstone_Project
+### Project 1
+### Outline
+[Project Title](#Project-Title)
+
+[Project Overview](#Project-Overview)
+
+[Goals](#Goals)
+
+[Data Sources](#Data-Sources)
+
+[Tools Used](#Tools-Used)
+
+[Data Cleaning and Preparation](#Data-Cleaning-and-Preparation)
+
+[Exploratory Data Analysis](#Exploratory-Data-Anaysis)
+
+[Data Analysis](#Data-Analysis)
+
 #### Project Title: Sales Performance Analysis for a Retail Store
 #### Project Overview
 This Data Analysis project aims to analyze the sales performance of a retail store. By Using data analytics tecniques, we aim to explore sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings.
@@ -55,7 +72,7 @@ Average sales for jacket	=AVERAGEIF(C2:C9922,C9917,I2:I9922)
 Average sales for gloves	=AVERAGEIF(C2:C9922,C9918,I2:I9922)
 ```
 
-###### Data Visualization
+Data Visualization
 - Calculations
 
 ![Excel Sales Data ](https://github.com/user-attachments/assets/4bfd3aa2-28eb-4a70-9946-9de09e90b47f)
