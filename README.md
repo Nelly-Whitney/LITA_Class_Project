@@ -19,6 +19,8 @@ Documentation of my class projects while learning Data Analysis with Incubator H
 
 [Data Analysis](#Data-Analysis)
 
+
+
 #### Project Title: Sales Performance Analysis for a Retail Store
 #### Project Overview
 This Data Analysis project aims to analyze the sales performance of a retail store. By Using data analytics tecniques, we aim to explore sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings.
@@ -143,6 +145,17 @@ select PRODUCT as Productwithnosalesinlastquarter from [dbo].[Assignment2]
 group by Product
 having SUM(case When orderdate >= '2024-01-01' and orderdate < '2024-04-30' then 1 else 0 end) = 0
 ```
+Data Visualozation
+- SQL Queries
 
+![SQL Sales Data](https://github.com/user-attachments/assets/0badc3b9-8471-4d6e-85dd-28750a82aaa2)
+
+##### Power BI Desktop Analysis
+The aim was to create an interactive dashboard which comprises the insights found in Excel and SQL. The dashboard includes
+- Sales Overview
+- Top-performing porducts
+- Regional Breakdown
+
+Data Visualization
 
 
