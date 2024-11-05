@@ -13,6 +13,8 @@ Documentation of my class projects while learning Data Analysis with Incubator H
 
 [Tools Used](#Tools-Used)
 
+[Data Overview](#Data-Overview)
+
 [Data Cleaning and Preparation](#Data-Cleaning-and-Preparation)
 
 [Exploratory Data Analysis](#Exploratory-Data-Anaysis)
@@ -45,6 +47,16 @@ The Primary source of the data is from the Data Analysis Teachers at Incubator H
 - SQL (Structured Query Language) Server [Download Here](https://www.microsoft.com) for querying of data
 - Power Bi Desktop for Visualization[Download Here](https://www.google.com/url?client=internal-element-cse&cx=012684331380167808104:oe5oj--md1a&q=https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads&sa=U&ved=2ahUKEwjQubqQr8GJAxUvUaQEHV7fEFkQFnoECBUQAQ&usg=AOvVaw1759XFBNl5AM71b9k88zga)
 - GitHub for Portfolio Building
+
+#### Data Overview
+The dataset includes the following key attributes
+- **OrderID**
+- **CustomerID**: Which identifies each Customer
+- **Product**: Which specifies the items bought
+- **Region**: The particular store in question
+- **OrderDate**: Date which the item was bought by customer
+- **Quantity**: Quantity of the Product bought by customer
+- **Unit Price**: Price of one of the item
 
 #### Data Cleaning and Preparation
 In the initial phase of the data cleaning and preparations, I performed the following actions;
