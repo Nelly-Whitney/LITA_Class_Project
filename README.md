@@ -19,9 +19,13 @@ Documentation of my class projects while learning Data Analysis with Incubator H
 
 [Data Analysis](#Data-Analysis)
 
+[Findings](#Findings)
+
+[Conclusion](#Conclusion)
 
 
 #### Project Title: Sales Performance Analysis for a Retail Store
+
 #### Project Overview
 This Data Analysis project aims to analyze the sales performance of a retail store. By Using data analytics tecniques, we aim to explore sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings.
 
@@ -158,4 +162,26 @@ The aim was to create an interactive dashboard which comprises the insights foun
 
 Data Visualization
 
+![Sales Data 4](https://github.com/user-attachments/assets/e451ba58-1c64-4f59-98de-09e82677cb74)
 
+
+#### Findings
+- Key insights:
+  1. Sales of shoes generated the most Revenue
+  2. The region which has the most Sales is the South
+  3. Products where sold by one type each month
+  4. Some regions didn't sell some products
+- Trends and Patterns
+  1. The Quantity of Products sold for each product is usually higher at the start of the year and decreases as the year progresses but later increases as the next year begins.
+  
+#### Conclusion
+The analysis of the Sales Data reveals key insights that can provide strategic decisions
+1. Strong performance in Product Categories: The Shoes category demonstrated the highest sales accounting for 21.19% of total sales. this indicates a high demand for shoes suggesting more investment in marketing this item is necessary.
+2. Upcoming Trends: Sales of Shirts showed a significant increase in Sales during the 3rd quarter as compared to the first. This trend may reflect customer preferences in casual wear as the 3rd quater approaches hence it is recommended to expand inventory of this item during this quater to capitalize on it.
+3. Regional Insights: The South outperformed other regions by achieving 44.16% of total sales. In contrast, the West region lagged behind with only a 14.29% of total sales. Targeted marketing will prove beneficial in the South region to improve sales.
+4. Actionable Recommendations:
+   - Enhance marketing efforts for Shoes
+   - Explore promotional strategies in the South
+   - Develop a customer loyalty program to increase repeat sale
+
+In conclusion, the data emphasizes the importance of aligning marketing strategies with consumer preferences and regional performance. By leveraging these insights, sales can be optimized and drive growth over upcoming quaters.
